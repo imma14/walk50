@@ -1,0 +1,56 @@
+#steps {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    position: relative;
+    top : 50px;
+    transition: 3s linear;
+    .step {
+        margin: 0 150px;
+        font-family: 'Gotu', sans-serif;
+    }
+    .shape-outer {
+        display: flex;
+        flex-shrink: 0;
+        height: 135px;
+        width: 145px;
+        background: #d2dfed; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #d2dfed 0%, #c8d7eb 26%, #99b5db 88%, #799bc8 100%); 
+        background: -webkit-linear-gradient(-45deg,  #d2dfed 0%,#c8d7eb 26%,#99b5db 88%,#799bc8 100%); 
+        background: linear-gradient(135deg,  #d2dfed 0%,#c8d7eb 26%,#99b5db 88%,#799bc8 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2dfed', endColorstr='#799bc8',GradientType=1 ); 
+        opacity: 0.7;
+        .shape-inner {	
+            height: 120px;
+            width: 120px;
+            font-size: 32px;
+            background: #5d6086;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            color: #afacac;
+        }
+        &.lighted {
+            background: #fceabb; /* Old browsers */
+            background: -moz-linear-gradient(-45deg,  #fceabb 0%, #fbdf93 100%); 
+            background: -webkit-linear-gradient(-45deg,  #fceabb 0%,#fbdf93 100%); 
+            background: linear-gradient(135deg,  #fceabb 0%,#fbdf93 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 ); 
+            opacity: 1;
+            .shape-inner {
+                background: #f3ee69;
+                color: black;
+            }
+        }
+    }
+    .chevron-right {
+        -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    .octagon {
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+}
