@@ -40,7 +40,8 @@ class Levels extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        score : state.score
+        score : state.scoreReducer.score,
+        step : state.stepReducer.step
     }
   }
 export default connect(mapStateToProps)(Levels); 

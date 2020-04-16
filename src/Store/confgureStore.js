@@ -1,4 +1,4 @@
-import {createStore} from 'redux'
-import updateScore from'./Reducers/scoreReducer'
+import {createStore } from 'redux'
+import rootReducer from './Reducers/rootReducer'
 
-export default createStore(updateScore)
+export default createStore(rootReducer)

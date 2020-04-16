@@ -1,0 +1,165 @@
+[
+    {
+        "id": "1",
+        "categorie" : "Cinéma",
+        "theme" : "Quentin Tarantino",
+		"easy": {
+            "level": 1,
+            "title": "Avec quel film Q. Tarantino a-t-il remporté la Palme d'Or en 1994 ?",
+            "propositions" : {
+                "text1" : "Reservoir Dog",
+                "text2" : "Apocalypse Now",
+                "text3" : "Pulp Fiction",
+                "text4" : "Barton Fink"
+            },
+            "answer" : "Pulp Fiction"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel scenario Q. Tarantino a-t-il vendu pour 40 000 $ en 1987",
+            "propositions" : {
+                "text1" : "Tueurs nés",
+                "text2" : "Reservoir Dog",
+                "text3" : "True Romance",
+                "text4" : "Barton Fink"
+            },
+            "answer" : "True Romance"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Comment s'appelait le premier film réalisé par Q. Tarantino, dont la seule copie a partiellement brûlé ?",
+            "answer" : "My Best Friend's Birthday"
+        }
+    },
+    {
+        "id": "2",
+        "categorie" : "Littérature",
+        "theme" : "Prix Nobels de littérature",
+		"easy": {
+            "level": 1,
+            "title": "Que écrivain français, auteur entre autre de l'Etranger et La Peste, a obtenu le prix Nobel de littérature en 1957 ?",
+            "propositions" : {
+                "text1" : "Jean-Paul Sartre",
+                "text2" : "Albert Camus",
+                "text3" : "Patrick Modiano",
+                "text4" : "Guillaume Musso"
+            },
+            "answer" : "Albert Camus"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel est le premier auteur de nationalité américaine a avoir obtenu le prix Nobel de Littérature ? ",
+            "propositions" : {
+                "text1" : "Sinclair Lewis",
+                "text2" : "John Dos Passos",
+                "text3" : "William Faulkner",
+                "text4" : "Tom Wolfe"
+            },
+            "answer" : "Sinclair Lewis"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel écrivain irlandais, prix Nobel de littéraure en 1969, a écrit une partie de ses oeuvres en français ?",
+            "format" : "(Prénom + Nom)",
+            "answer" : "Samuel Becket"
+        }
+    }, 
+    {
+        "id": "3",
+        "categorie" : "Musique",
+        "theme" : "Beatles",
+		"easy": {
+            "level": 1,
+            "title": "Quel était le nom du bassiste des Beatles ?",
+            "propositions" : {
+                "text1" : "Ringo Starr",
+                "text2" : "Paul McCartney",
+                "text3" : "Bill Wyman",
+                "text4" : "Roger Waters"
+            },
+            "answer" : "Paul McCartney"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel album se termine par un ultrason dont John Lenon espérait qu'il ferait aboyer les chiens ?",
+            "propositions" : {
+                "text1" : "Let it Be",
+                "text2" : "Sgt Pepper's Lonely Heart Club Band",
+                "text3" : "Please Please Me",
+                "text4" : "Revolver"
+            },
+            "answer" : "Sgt Pepper's Lonely Heart Club Band"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel était le nom du batteur des Beatles qui a quitté le groupe juste avant le début du succès ?",
+            "format" : "(Prénom + Nom)",
+            "answer" : "George Best"
+        }
+    },
+    {
+        "id": "4",
+        "categorie" : "Littérature",
+        "theme" : "Marcel Proust",
+		"easy": {
+            "level": 1,
+            "title": "Comment s'appelle le roman en sept volumes écrit par Proust entre 1906 et 1922",
+            "propositions" : {
+                "text1" : "La comédie humaine",
+                "text2" : "A la recherche du temps perdu",
+                "text3" : "Les Rougon-Macquart",
+                "text4" : "Du côté de chez Swann"
+            },
+            "answer" : "A la recherche du temps perdu"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel est le prénom de la servante qui travaille chez tante Léonie puis au service du narrateur dans La recherche du temps perdu ?",
+            "propositions" : {
+                "text1" : "Françoise",
+                "text2" : "Odette",
+                "text3" : "Albertine",
+                "text4" : "Marcelle"
+            },
+            "answer" : "Françoise"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel recueil de poèmes en prose et de nouvelles est le tout premier ouvrage publié par Marcel Proust en 1896 ?",
+            "answer" : "Les Plaisirs et les Jours"
+        }
+    },
+    {
+        "id": "5",
+        "categorie" : "Histoire",
+        "theme" : "Les institutions de la Vème république",
+		"easy": {
+            "level": 1,
+            "title": "Qui a été le premier président de la Vème république ?",
+            "propositions" : {
+                "text1" : "René Coty",
+                "text2" : "François Mitterand",
+                "text3" : "Pierre Mendès-France",
+                "text4" : "Charles de Gaulle"
+            },
+            "answer" : "Charles de Gaulle"
+        },
+        "medium": {
+            "level": 2,
+            "title": "En quelle année a eu lieu la première élection présidentielle au suffrage universel sous la Vème république ?",
+            "propositions" : {
+                "text1" : "1958",
+                "text2" : "1962",
+                "text3" : "1965",
+                "text4" : "1974"
+            },
+            "answer" : "1962"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Au premier janvier 2020, combien de dissolution(s) de l'Assemblée Nationale ont eu lieu sous la Vème république ?",
+            "format" : "(réponse en chiffres)",
+            "answer" : "5"
+        }
+    }
+]
