@@ -61,7 +61,7 @@
   overflow-y: auto;
   h1 {
     font-size: 32px;
-    /*font-weight: normal;*/
+    font-weight: normal;
   }
   h2 {
     font-size: 28px;
@@ -225,7 +225,7 @@
     z-index: 0;
   }
 }
-@media(max-height:669px){
+@media(max-height:740px){
   #scorebox {
     z-index: 0;
     width: 80px;

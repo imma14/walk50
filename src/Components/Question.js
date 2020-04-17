@@ -24,19 +24,19 @@ class Question extends Component {
                     <div>Choisissez votre question :</div>
                     <div id="choices-container">
                         <div className="choice" onClick={()=>this.questionChoice('easy')}>
-                            <p>Facile <span class="mobile-only">(1 pas)</span></p>
+                            <p>Facile <span className="mobile-only">(1 pas)</span></p>
                             <img src="/images/easy.png" alt="facile"/>
-                            <p class="no-mobile">Avance/Recul de <span className="bold">1</span> pas</p>
+                            <p className="no-mobile">Avance/Recul de <span className="bold">1</span> pas</p>
                         </div>
                         <div className="choice" onClick={()=>this.questionChoice('medium')}>
-                            <p>Moyen <span class="mobile-only">(3 pas)</span></p>
+                            <p>Moyen <span className="mobile-only">(3 pas)</span></p>
                             <img src="/images/medium.png" alt="moyen"/>
-                            <p class="no-mobile">Avance/Recul de <span className="bold">3</span> pas</p>
+                            <p className="no-mobile">Avance/Recul de <span className="bold">3</span> pas</p>
                         </div>
                         <div className="choice" onClick={()=>this.questionChoice('hard')}>
-                            <p>Difficile <span class="mobile-only">(5 pas)</span></p>
+                            <p>Difficile <span className="mobile-only">(5 pas)</span></p>
                             <img src="/images/hard.png" alt="facile"/>
-                            <p class="no-mobile">Avance/Recul de <span className="bold">5</span> pas</p>
+                            <p className="no-mobile">Avance/Recul de <span className="bold">5</span> pas</p>
                         </div>
                     </div>
                 </div>
