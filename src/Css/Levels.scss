@@ -17,7 +17,7 @@
         background: #d2dfed; /* Old browsers */
         background: -moz-linear-gradient(-45deg,  #d2dfed 0%, #c8d7eb 26%, #99b5db 88%, #799bc8 100%); 
         background: -webkit-linear-gradient(-45deg,  #d2dfed 0%,#c8d7eb 26%,#99b5db 88%,#799bc8 100%); 
-        background: linear-gradient(135deg,  #d2dfed 0%,#c8d7eb 26%,#99b5db 88%,#799bc8 100%); 
+        background: linear-gradient(135deg, #d2dfed 0%,#c8d7eb 26%,#99b5db 88%,#799bc8 100%); 
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2dfed', endColorstr='#799bc8',GradientType=1 ); 
         opacity: 0.7;
         .shape-inner {	
@@ -33,14 +33,14 @@
         }
         &.lighted {
             background: #fceabb; /* Old browsers */
-            background: -moz-linear-gradient(-45deg,  #fceabb 0%, #fbdf93 100%); 
-            background: -webkit-linear-gradient(-45deg,  #fceabb 0%,#fbdf93 100%); 
-            background: linear-gradient(135deg,  #fceabb 0%,#fbdf93 100%); 
+            background: -moz-linear-gradient(-45deg,  #8BC34A 0%, #4CAF50 100%); 
+            background: -webkit-linear-gradient(-45deg,  #8BC34A 0%,#4CAF50 100%); 
+            background: linear-gradient(135deg, #8BC34A 0%, #4CAF50 100%);
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 ); 
             opacity: 1;
             .shape-inner {
-                background: #f3ee69;
-                color: black;
+                background: #a2de90;
+                color: white;
             }
         }
     }
@@ -52,5 +52,19 @@
     .octagon {
         -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
                 clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+}
+@media(max-height:669px){
+    #steps {
+        top: 10%;
+        .shape-outer {
+            height: 90px;
+            width: 90px;
+            .shape-inner {
+                height: 80px;
+                width: 80px;
+                font-size: 20px;
+            }
+        }
     }
 }

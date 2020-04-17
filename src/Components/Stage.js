@@ -21,30 +21,42 @@ class Stage extends Component {
             movingValue : 0,
             showModal : false,
             showIntroModal : true,
+            showWinModal : false,
             questions : questionsList,
-            currentQuestion : {}
+            currentQuestion : {},
+            windowHeight : window.innerHeight
         }
     }
 
+    componentDidUpdate = () => {
+        if(this.state.level >= 50){
+            setTimeout(()=>{
+                this.setState({showWinModal : true})
+            }, 4000)
+
+        }
+    }
     // Open modal and send question
     openModal = (e) => {
-        e.preventDefault()
-        this.setState({showModal : true})
-
-        let maxNumber = this.state.questions.length
-        let randomQuestion = Math.floor(Math.random() * maxNumber) + 1
-        this.state.questions.map((question, index)=>{
-            if((index+1) === randomQuestion){
-                this.setState({currentQuestion : question})
-                this.removeCurrentQuestion(index)
-            }            
-        })
-        //If no question left, reload questions list
-        if(this.state.questions.length === 1) {
-            this.setState({questions : [...questionsList]})
+        if(this.state.level < 50) {
+            e.persist()
+            this.setState({showModal : true})
+    
+            let maxNumber = this.state.questions.length
+            let randomQuestion = Math.floor(Math.random() * maxNumber) + 1
+            this.state.questions.map((question, index)=>{
+                if((index+1) === randomQuestion){
+                    this.setState({currentQuestion : question})
+                    this.removeCurrentQuestion(index)
+                }            
+            })
+            //If no question left, reload questions list
+            if(this.state.questions.length === 0) {
+                this.setState({questions : [...questionsList]})
+            }
         }
+        
     }
-
     // remove asked question from list
     removeCurrentQuestion = (index) => {
         const arr = this.state.questions.slice();
@@ -65,17 +77,17 @@ class Stage extends Component {
 
     moveCharacter = (e, forward, steps) => {
         if(forward) {
-            //en avant
+            //forward
             let value = 0;
             switch(steps){
                 case 1 :
-                    value = -445
+                    value = this.state.windowHeight > 740 ? -445 : -390
                     break
                 case 3 :
-                    value = -1335
+                    value = this.state.windowHeight > 740 ? -1335 : -1170
                     break
                 case 5 :
-                    value = -2225
+                    value = this.state.windowHeight > 740 ? -2225 : -1950
                     break
                 default :
                     value = 0
@@ -94,25 +106,27 @@ class Stage extends Component {
             setTimeout(() => {
                 this.setState({moving: false, rewind : false, movingValue : 0});
               }, 3000)
+              setTimeout(()=> {
+                this.openModal(e)
+            }, steps === 5 ? 4500 : 4000)
 
         } else {
-            //en arrière
+            //backward
             let value = 0;
             switch(steps){
                 case 1 :
-                    value = 445
+                    value = this.state.windowHeight > 740 ? 445 : 390
                     break
                 case 3 :
-                    value = 1335
+                    value = this.state.windowHeight > 740 ? 1335 : 1170
                     break
                 case 5 :
-                    value = 2225
+                    value = this.state.windowHeight > 740 ? 2225 : 1950
                     break
                 default :
                     value = 0
             }
-            
-            // bloquer les retours à zéro minimum
+            // Stop when hit zero
             if(this.state.level !== 0){
                 if(this.state.scrollLeft + value >= 0) {
                     this.setState({
@@ -125,6 +139,9 @@ class Stage extends Component {
                     setTimeout(() => {
                         this.setState({moving: false, rewind : false, movingValue : 0});
                     }, 3000)
+                    setTimeout(()=> {
+                        this.openModal(e)
+                    }, 4000)
                 } else {
                     this.setState({
                         rewind : true,
@@ -136,11 +153,17 @@ class Stage extends Component {
                     setTimeout(() => {
                         this.setState({moving: false, rewind : false, movingValue : 0});
                     }, 3000)
+                    setTimeout(()=> {
+                        this.openModal(e)
+                    }, 4000)
                 }
             } else {
                 this.setState({
                     attempts : this.state.attempts + 1
                 })
+                setTimeout(()=> {
+                    this.openModal(e)
+                }, 1000)
             }
             // redux store
             const action = {type : 'SUBSTRACT_SCORE', value : steps}
@@ -151,24 +174,37 @@ class Stage extends Component {
             })
 
         }
-        setTimeout(()=> {
-            this.openModal(e)
-        }, 4000)
+        
     }
 
     movingCharacter = (steps)=>{
-        switch(steps){
-            case(0) :
-                return "./images/idle-sheet.png";
-            case(1) :
-                return "./images/walk-sheet.png";
-            case(3) :
-                return "./images/walk-sheet.png";
-            case(5) :
-                return "./images/run-sheet.png";
-            default :
-                return "./images/idle-sheet.png";
-        }
+        if(this.state.windowHeight > 740){
+            switch(steps){
+                case(0) :
+                    return "./images/idle-spritesheet.png";
+                case(1) :
+                    return "./images/walk-spritesheet.png";
+                case(3) :
+                    return "./images/walk-spritesheet.png";
+                case(5) :
+                    return "./images/run-spritesheet.png";
+                default :
+                    return "./images/idle-spritesheet.png";
+            }
+        } else {
+            switch(steps){
+                case(0) :
+                    return "./images/idle-spritesheet-mobile.png";
+                case(1) :
+                    return "./images/walk-spritesheet-mobile.png";
+                case(3) :
+                    return "./images/walk-spritesheet-mobile.png";
+                case(5) :
+                    return "./images/run-spritesheet-mobile.png";
+                default :
+                    return "./images/idle-spritesheet-mobile.png";
+            }
+        } 
     }
 
     CharacterDirection = () => {
@@ -185,7 +221,7 @@ class Stage extends Component {
                 <ReactModal 
                 isOpen={this.state.showIntroModal}
                 ariaHideApp={false}
-                contentLabel="Minimal Modal Example"
+                contentLabel="Bienvenue"
                 className="modal"
                 >
                     <h1>Bienvenue !</h1>
@@ -193,31 +229,41 @@ class Stage extends Component {
                     <p>Chaque question appartient à un thème. En fonction du thème, vous pouvez choisir de répondre à une question facile, 
                         moyenne ou difficile.</p>
                     <p>Une bonne réponse à une question facile vous fera avancer d'une case, mais une mauvaise réponse vous fera reculer d'une case.</p>
-                    <p>Pour les questions moyennes, vous avancerez ou reculerez de trois cases, et de cinq cases pour les questions difficles.</p>
-                    <p>Le but est d'atteindre l'arrivée (case 50) avec le moins d'essais possibles.</p>
+                    <p>Pour les questions moyennes, vous avancerez ou reculerez de trois cases, et de cinq cases pour les questions difficiles.</p>
+                    <p>Le but est d'atteindre l'arrivée (case 50) avec le moins d'essais possible.</p>
                     <p>Bonne chance !</p>
                     <button id="start-game" onClick={(e)=> this.closeIntroModal(e)}>Commencer</button> 
                 </ReactModal>
                 <ReactModal 
+                isOpen={this.state.showWinModal}
+                ariaHideApp={false}
+                contentLabel="Bienvenue"
+                className="modal"
+                >
+                    <h1>Félicitations !</h1>
+                    <h2>Vous êtes arrivés au bout</h2>
+                    <p>Il vous a fallu {this.state.attempts} essais pour terminer le quiz</p>
+                    <p>{this.state.attempts === 10 ? "Bravo, c'est le meilleur score possible, vous êtes imbattable !" : "Pourquoi ne pas tenter de faire encore mieux ?"}</p>
+                </ReactModal>
+                <ReactModal 
                 isOpen={this.state.showModal}
                 ariaHideApp={false}
-                contentLabel="Minimal Modal Example"
+                contentLabel="Question"
                 className="modal"
                 >
                     <Question currentQuestion={this.state.currentQuestion} modalCallback={this.closeModal} scrollCallback={this.moveCharacter}/>
                 </ReactModal>
-                <div id="scorebox">Essais<br/>{this.state.attempts}</div>
+                {!this.state.showIntroModal && <div id="scorebox">Essais<br/>{this.state.attempts}</div>}
                 <Levels scrollLevels={this.state.scrollLeft}/>
                 <Spritesheet
                     image={this.movingCharacter(this.state.movingValue)}
-                    widthFrame={363}
-                    heightFrame={483}
+                    widthFrame={this.state.windowHeight > 740 ? 363 : 216}
+                    heightFrame={this.state.windowHeight > 740 ? 505 : 300}
                     steps={15}
                     fps={12}
                     loop={true}
                     style={this.CharacterDirection()}
                 />
-                <button onClick={(e)=> this.openModal(e)}>Ouvrir modale</button>
             </div>
         )
     }

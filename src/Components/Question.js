@@ -24,19 +24,19 @@ class Question extends Component {
                     <div>Choisissez votre question :</div>
                     <div id="choices-container">
                         <div className="choice" onClick={()=>this.questionChoice('easy')}>
-                            <p>Facile</p>
+                            <p>Facile <span class="mobile-only">(1 pas)</span></p>
                             <img src="/images/easy.png" alt="facile"/>
-                            <p>Avance/Recul de <span className="bold">1</span> pas</p>
+                            <p class="no-mobile">Avance/Recul de <span className="bold">1</span> pas</p>
                         </div>
                         <div className="choice" onClick={()=>this.questionChoice('medium')}>
-                            <p>Moyen</p>
+                            <p>Moyen <span class="mobile-only">(3 pas)</span></p>
                             <img src="/images/medium.png" alt="moyen"/>
-                            <p>Avance/Recul de <span className="bold">3</span> pas</p>
+                            <p class="no-mobile">Avance/Recul de <span className="bold">3</span> pas</p>
                         </div>
                         <div className="choice" onClick={()=>this.questionChoice('hard')}>
-                            <p>Difficile</p>
+                            <p>Difficile <span class="mobile-only">(5 pas)</span></p>
                             <img src="/images/hard.png" alt="facile"/>
-                            <p>Avance/Recul de <span className="bold">5</span> pas</p>
+                            <p class="no-mobile">Avance/Recul de <span className="bold">5</span> pas</p>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ class Question extends Component {
                     <div className="questionTitle">{this.props.currentQuestion.hard.title}</div>
                     <div className="format">{this.props.currentQuestion.hard.format ? this.props.currentQuestion.hard.format : ''}</div>
                     <form onSubmit={(event) => this.getAnswerHard(event, 5)}> 
-                        <input type="text" value={this.state.hardAnswer} onChange={this.handleChange}/>
+                        <input type="text" autoFocus value={this.state.hardAnswer} onChange={this.handleChange}/>
                         <input type="submit" id="validation" value="valider" />
                         <div className="result">{this.state.hardAnswerResultText}</div>
                     </form>
@@ -115,9 +115,9 @@ class Question extends Component {
             this.setState({hardAnswerResultText : 'Bonne réponse ! '})
             setTimeout(function(){
                 scrollCallback(event, true, steps)
-            }, 1500)
+            }, 2000)
         } else {
-            // tolerance de 3 lettres pour les réponses supérieurs à 8 lettres
+            // 3 letters error accepted for answers > 8 letters
             if(preparedProposition.length > 8) {
                 let differences = fastDiff(preparedAnswer, preparedProposition)
                 let tolerance = 0

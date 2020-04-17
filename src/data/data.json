@@ -5,7 +5,7 @@
         "theme" : "Quentin Tarantino",
 		"easy": {
             "level": 1,
-            "title": "Avec quel film Q. Tarantino a-t-il remporté la Palme d'Or en 1994 ?",
+            "title": "Avec quel film Quentin Tarantino a-t-il remporté la Palme d'Or en 1994 ?",
             "propositions" : {
                 "text1" : "Reservoir Dog",
                 "text2" : "Apocalypse Now",
@@ -16,7 +16,7 @@
         },
         "medium": {
             "level": 2,
-            "title": "Quel scenario Q. Tarantino a-t-il vendu pour 40 000 $ en 1987",
+            "title": "Quel scenario Quentin Tarantino a-t-il vendu pour 40 000 $ en 1987 ?",
             "propositions" : {
                 "text1" : "Tueurs nés",
                 "text2" : "Reservoir Dog",
@@ -27,7 +27,7 @@
         },
         "hard": {
             "level": 3,
-            "title": "Comment s'appelait le premier film réalisé par Q. Tarantino, dont la seule copie a partiellement brûlé ?",
+            "title": "Comment s'appelait le premier film réalisé par Quentin Tarantino, dont la seule copie a partiellement brûlé ?",
             "answer" : "My Best Friend's Birthday"
         }
     },
@@ -53,7 +53,7 @@
                 "text1" : "Sinclair Lewis",
                 "text2" : "John Dos Passos",
                 "text3" : "William Faulkner",
-                "text4" : "Tom Wolfe"
+                "text4" : "John Steinbeck"
             },
             "answer" : "Sinclair Lewis"
         },
@@ -85,7 +85,7 @@
             "propositions" : {
                 "text1" : "Let it Be",
                 "text2" : "Sgt Pepper's Lonely Heart Club Band",
-                "text3" : "Please Please Me",
+                "text3" : "Abbey Road",
                 "text4" : "Revolver"
             },
             "answer" : "Sgt Pepper's Lonely Heart Club Band"
@@ -106,9 +106,10 @@
             "title": "Comment s'appelle le roman en sept volumes écrit par Proust entre 1906 et 1922",
             "propositions" : {
                 "text1" : "La comédie humaine",
-                "text2" : "A la recherche du temps perdu",
-                "text3" : "Les Rougon-Macquart",
-                "text4" : "Du côté de chez Swann"
+                "text2" : "Du côté de chez Swann",
+                "text3" : "A la recherche du temps perdu",
+                "text4" : "Les Rougon-Macquart"
+                
             },
             "answer" : "A la recherche du temps perdu"
         },
@@ -153,13 +154,242 @@
                 "text3" : "1965",
                 "text4" : "1974"
             },
-            "answer" : "1962"
+            "answer" : "1965"
         },
         "hard": {
             "level": 3,
             "title": "Au premier janvier 2020, combien de dissolution(s) de l'Assemblée Nationale ont eu lieu sous la Vème république ?",
             "format" : "(réponse en chiffres)",
             "answer" : "5"
+        }
+    },
+    {
+        "id": "6",
+        "categorie" : "Littérature",
+        "theme" : "Charles Dickens",
+		"easy": {
+            "level": 1,
+            "title": "Quel orphelin est le héros d'un roman de Dickens publié à partir de 1849 ?",
+            "propositions" : {
+                "text1" : "Uriah Heep",
+                "text2" : "Richard Babley",
+                "text3" : "Oliver Twist",
+                "text4" : "Harry Potter"
+            },
+            "answer" : "Oliver Twist"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Dans quel roman de Dickens le jeune Pip reçoit-il une fortune de la part d'un bienfaiteur anonyme ?",
+            "propositions" : {
+                "text1" : "Les Temps difficiles",
+                "text2" : "David Copperfield",
+                "text3" : "l'Ami Commun",
+                "text4" : "De Grandes Espérances"
+            },
+            "answer" : "De Grandes Espérances"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Comment s'appelle le dernier roman inachevé du Dickens ?",
+            "answer" : "Le Mystère d'Edwin Drood"
+        }
+    },
+    {
+        "id": "7",
+        "categorie" : "Géographie",
+        "theme" : "Capitales du monde",
+		"easy": {
+            "level": 1,
+            "title": "Quelle est la capitale du Japon ?",
+            "propositions" : {
+                "text1" : "Kyoto",
+                "text2" : "Tokyo",
+                "text3" : "Okinawa",
+                "text4" : "Osaka"
+            },
+            "answer" : "Tokyo"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quelle est la capitale de l'Inde ?",
+            "propositions" : {
+                "text1" : "Mumbai",
+                "text2" : "Delhi",
+                "text3" : "New Delhi",
+                "text4" : "Calcutta"
+            },
+            "answer" : "New Delhi"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quelle est la capitale de l'Ouganda ?",
+            "answer" : "Kampala"
+        }
+    },
+    {
+        "id": "8",
+        "categorie" : "Musique",
+        "theme" : "Ludwig van Beethoven",
+		"easy": {
+            "level": 1,
+            "title": "Sous quel nom est plus connue la Bagatelle en la mineur, WoO 59 de Beethoven ?",
+            "propositions" : {
+                "text1" : "Lettre à Elise",
+                "text2" : "Lettre à Berthe",
+                "text3" : "Lettre à Thérèse",
+                "text4" : "Lettre à Jeanine"
+            },
+            "answer" : "Lettre à Elise"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quelle symphonie de Beethoven était à l'origine dédiée à Napoléon Bonaparte, avant que le compositeur ne retire cette dédicace ?",
+            "propositions" : {
+                "text1" : "Symphonie n°9",
+                "text2" : "Symphonie n°3",
+                "text3" : "Symphonie n°7",
+                "text4" : "Symphonie n°5"
+            },
+            "answer" : "Symphonie n°3"
+        },
+        "hard": {
+            "level": 3,
+            "title": "De quel compositeur autrichien Beethoven devient-il l'élève en 1792 ?",
+            "format" : "(Nom de famille)",
+            "answer" : "Haydn"
+        }
+    },
+    {
+        "id": "9",
+        "categorie" : "Cinéma",
+        "theme" : "Star Wars",
+		"easy": {
+            "level": 1,
+            "title": "En 1977, sous quel nom est sorti le premier film de la saga Star Wars en France ?",
+            "propositions" : {
+                "text1" : "La planète sauvage",
+                "text2" : "La guerre des étoiles",
+                "text3" : "L'étoile noire",
+                "text4" : "La menace fantôme"
+            },
+            "answer" : "La guerre des étoiles"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Sur quelle planète Luke Skywalker est-il formé par Yoda ?",
+            "propositions" : {
+                "text1" : "Tatooine",
+                "text2" : "Alderaan",
+                "text3" : "Dagobah",
+                "text4" : "Naboo"
+            },
+            "answer" : "Dagobah"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel cinéaste a réalisé Le Retour du Jedi ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Richard Marquand"
+        }
+    },
+    {
+        "id": "10",
+        "categorie" : "Sport",
+        "theme" : "Tour de France",
+		"easy": {
+            "level": 1,
+            "title": "Traditionnellement, où se situe l'arrivée de la dernière étape du Tour de France ?",
+            "propositions" : {
+                "text1" : "Sous la Tour Eiffel",
+                "text2" : "Au chateau de Versailles",
+                "text3" : "Sur les Champs Élysées",
+                "text4" : "Devant l'hôtel de ville de Paris"
+            },
+            "answer" : "Sur les Champs Élysées"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Lequel de ces coureurs n'a pas remporté cinq fois le Tour de France ?",
+            "propositions" : {
+                "text1" : "Eddy Merckx",
+                "text2" : "Miguel Indurain",
+                "text3" : "Lance Armstrong",
+                "text4" : "Jacques Anquetil"
+            },
+            "answer" : "Lance Armstrong"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Combien de secondes séparaient Laurent Fignon et Greg LeMond à la fin du Tour de France 1989 ?",
+            "format" : "(chiffre)",
+            "answer" : "8"
+        }
+    },
+    {
+        "id": "11",
+        "categorie" : "Littérature",
+        "theme" : "Victor Hugo",
+		"easy": {
+            "level": 1,
+            "title": "Dans quel roman de Victor Hugo apparaissent les personnages de Cosette et Gavroche ?",
+            "propositions" : {
+                "text1" : "L'Homme qui rit",
+                "text2" : "Les Misérables",
+                "text3" : "Notre Dame de Paris",
+                "text4" : "Le Comte de Monte-Cristo"
+            },
+            "answer" : "Les Misérables"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel est le nom de l'archidiacre dans le roman Notre Dame de Paris ?",
+            "propositions" : {
+                "text1" : "Frollo",
+                "text2" : "Gringoire",
+                "text3" : "Châteaupers",
+                "text4" : "Quasimodo"
+            },
+            "answer" : "Frollo"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Comment s'appelait la fille de Victor Hugo, morte noyée et ayant inspiré une large partie des Contemplations ?",
+            "format" : "(prénom)",
+            "answer" : "Léopoldine"
+        }
+    },
+    {
+        "id": "12",
+        "categorie" : "Histoire",
+        "theme" : "La Deuxième République",
+		"easy": {
+            "level": 1,
+            "title": "En quelle année a été proclamée la Deuxième République en France ?",
+            "propositions" : {
+                "text1" : "1792",
+                "text2" : "1848",
+                "text3" : "1918",
+                "text4" : "1945"
+            },
+            "answer" : "1848"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel poète et romancier proclame la Deuxième République le 24 février 1848 ?",
+            "propositions" : {
+                "text1" : "Victor Hugo",
+                "text2" : "Alphonse de Lamartine",
+                "text3" : "Jules Michelet",
+                "text4" : "Prosper Mérimée"
+            },
+            "answer" : "Alphonse de Lamartine"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel homme politique a rédigé le decret d'abolition de l'esclavage signé le 27 avril 1848 ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Victor Schoelcher"
         }
     }
 ]

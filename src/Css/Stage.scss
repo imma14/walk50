@@ -19,6 +19,7 @@
     display: grid;
     place-content: center;
     position: relative;
+    z-index: 1;
     margin: 0.625em;
     padding-left: 0.25em;
     width: 140px;
@@ -30,7 +31,7 @@
     margin-right: 30px;
     margin-top: 30px;
     filter: drop-shadow(1px 1px #fff);
-    background: #fff7b6;
+    background: #ece07a;
     &:after {
         position: absolute;
         top: -0.5em;
@@ -47,7 +48,7 @@
   top: 10%;
   left: 5%;
   right: 5%;
-  bottom: 20%;
+  height: fit-content;
   padding: 60px;
   background: #80d5a6;
   border: 5px dashed mediumseagreen;
@@ -56,14 +57,25 @@
   font-size: 3em;
   text-align: center;
   font-size : 24px;
+  max-height: 75vh;
+  overflow-y: auto;
   h1 {
-    font-size : 38px;
+    font-size: 32px;
+    /*font-weight: normal;*/
   }
   h2 {
-    font-size : 28px
+    font-size: 28px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .questionTitle {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
   #choices-container {
-    width: 70%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -71,7 +83,7 @@
       cursor: pointer;
       border: 1px solid #c5c5c5;
       padding: 10px;
-      margin-top: 20px;
+      margin: 20px 5px;
       box-shadow: 2px 2px 5px #afacac;
       background: #f5f5cf;
       img {
@@ -80,6 +92,12 @@
       .bold {
         font-weight: bold;
         font-size: 28px;
+      }
+      &:hover {
+        background: #fbfbdd;
+      }
+      .mobile-only {
+        display: none;
       }
     }
   }
@@ -90,13 +108,20 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     .choice {
-      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
       cursor: pointer;
       border: 1px solid #c5c5c5;
       padding: 10px;
-      margin-top: 20px;
+      margin: 20px 10px;
       box-shadow: 2px 2px 5px #afacac;
       background: #f5f5cf;
+      font-size: 28px;
+      &:hover {
+        background: #fbfbdd;
+      }
     }
   }
   input[type="text"] {
@@ -113,7 +138,7 @@
     margin-left: 5px;
     font-size: 24px;
     padding: 7px 10px;
-    background: #efefef;
+    background: #b9deba;
     box-shadow: none;
     border: 1px solid #afafaf;
     border-radius: 5px;
@@ -121,6 +146,10 @@
     &:hover {
       background: #e1e1e1;
     }
+  }
+  .result {
+    margin-top: 20px;
+    font-size: 28px;
   }
 }
 #start-game {
@@ -134,5 +163,116 @@
   color: white;
   &:hover {
     background: #5192d6;
+  }
+}
+@media(max-width:960px){
+  .modal {
+    padding: 15px;
+    margin: 20px;
+    h1 {
+      font-size : 22px
+    }
+    h2 {
+      font-size : 18px
+    }
+    .questionTitle {
+      font-size : 24px
+    }
+    .multiple-choices {
+      width: 95%;
+    }
+  }
+}
+@media(max-width:768px){
+  .modal {
+    top: 5%;
+    font-size: 14px;
+    h1 {
+      font-size : 16px
+    }
+    h2 {
+      font-size : 16px
+    }
+    .questionTitle {
+      font-size : 18px
+    }
+    #choices-container {
+      flex-direction: column;
+      font-size: 18px;
+      .choice {
+        font-size: 18px;
+        margin: 5px;
+        img {
+          width: 90px;
+        }
+        p {
+          margin: 5px;
+        }
+      }
+    }
+    .multiple-choices {
+      .choice {
+        margin: 5px;
+        width: 100%;
+        font-size: 16px;
+      }
+    } 
+    #start-game {
+      font-size: 24px;
+    }
+  }
+  #scorebox {
+    z-index: 0;
+  }
+}
+@media(max-height:669px){
+  #scorebox {
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+  .modal {
+    h1 {
+      font-size: 16px;
+      font-weight: normal;
+    }
+    .questionTitle {
+      font-size: 16px;
+      margin: 10px;
+    }
+    #choices-container {
+      .choice img {
+        width: 40px;
+      }
+      .choice {
+        p {
+          font-size: 14px;
+          .bold {
+            font-size: 16px;
+          }
+        }
+        .mobile-only {
+          display: inline;
+        }
+        .no-mobile {
+          display: none;
+        }
+      }
+    }
+    input[type="text"]{
+      width: 95%;
+      margin-bottom: 5px;
+    }
+    #validation {
+      font-size: 16px;
+    }
+    .format {
+      font-size: 16px;
+    }
+    .result {
+      margin-top: 10px;
+      font-size: 16px;
+    }
   }
 }
