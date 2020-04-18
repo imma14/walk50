@@ -621,7 +621,7 @@
         }
     },
     {
-        "id": "19",
+        "id": "20",
         "categorie" : "Sport",
         "theme" : "Rolland Garros",
 		"easy": {
@@ -654,7 +654,7 @@
         }
     },
     {
-        "id": "20",
+        "id": "21",
         "categorie" : "Divers",
         "theme" : "Jeu vidéo : The legend of Zelda",
 		"easy": {
@@ -686,7 +686,7 @@
         }
     },
     {
-        "id": "21",
+        "id": "22",
         "categorie" : "Histoire",
         "theme" : "La guerre de Cent ans",
 		"easy": {
@@ -718,7 +718,7 @@
         }
     },
     {
-        "id": "22",
+        "id": "23",
         "categorie" : "Musique",
         "theme" : "Rap français",
 		"easy": {
@@ -751,7 +751,7 @@
         }
     },
     {
-        "id": "23",
+        "id": "24",
         "categorie" : "Cinéma",
         "theme" : "Films Marvel",
 		"easy": {
@@ -778,13 +778,13 @@
         },
         "hard": {
             "level": 3,
-            "title": "Quel jeune garçon aide Tony Stark a localiser le Mandarin dans Iron Man 3 ?",
+            "title": "Quel jeune garçon aide Tony Stark à localiser le Mandarin dans Iron Man 3 ?",
             "format" : "(prénom)",
             "answer" : "Harley"
         }
     },
     {
-        "id": "24",
+        "id": "25",
         "categorie" : "Sport",
         "theme" : "Tournoi des 6 nations",
 		"easy": {
@@ -817,7 +817,7 @@
         }
     },
     {
-        "id": "25",
+        "id": "26",
         "categorie" : "Littérature",
         "theme" : "Littérature italienne",
 		"easy": {
@@ -849,7 +849,7 @@
         }
     },
     {
-        "id": "26",
+        "id": "27",
         "categorie" : "Géographie",
         "theme" : "Pays d'Amérique Latine",
 		"easy": {
@@ -881,7 +881,7 @@
         }
     },
     {
-        "id": "27",
+        "id": "28",
         "categorie" : "Musique",
         "theme" : "Daft Punk",
 		"easy": {
@@ -914,7 +914,7 @@
         }
     },
     {
-        "id": "28",
+        "id": "29",
         "categorie" : "Cinéma",
         "theme" : "Woody Allen",
 		"easy": {
@@ -946,7 +946,7 @@
         }
     },
     {
-        "id": "29",
+        "id": "30",
         "categorie" : "Divers",
         "theme" : "Série TV : Game of Thrones",
 		"easy": {
@@ -978,7 +978,7 @@
         }
     },
     {
-        "id": "30",
+        "id": "31",
         "categorie" : "Littérature",
         "theme" : "Les fables de La Fontaine",
 		"easy": {
@@ -1007,6 +1007,103 @@
             "level": 3,
             "title": "Par qui la génisse, la chèvre et la brebis se font-elle voler leur pitance ?",
             "answer" : "Le lion"
+        }
+    },
+    {
+        "id": "32",
+        "categorie" : "Histoire",
+        "theme" : "L'Allemagne de l'Est",
+		"easy": {
+            "level": 1,
+            "title": "En quelle année a été construit le mur de Berlin ?",
+            "propositions" : {
+                "text1" : "1945",
+                "text2" : "1949",
+                "text3" : "1961",
+                "text4" : "1974"
+            },
+            "answer" : "1961"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel président du conseil de la DRA est resté le plus longtemps en place, de 1976 à 1989 ?",
+            "propositions" : {
+                "text1" : "Willi Stoph",
+                "text2" : "Walter Ulbricht",
+                "text3" : "Erich Honecker",
+                "text4" : "Wilhelm Pieck"
+            },
+            "answer" : "Erich Honecker"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Qui fut la dernière chef d'État de la RDA ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Sabine Bergmann-Pohl"
+        }
+    },
+    {
+        "id": "33",
+        "categorie" : "Musique",
+        "theme" : "Tubes francophones des années 2010",
+		"easy": {
+            "level": 1,
+            "title": "Qui chante Papaoutai en 2013 ?",
+            "propositions" : {
+                "text1" : "Maitre Gims",
+                "text2" : "Orelsan",
+                "text3" : "Roméo ELvis",
+                "text4" : "Stromae"
+            },
+            "answer" : "Stromae"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Qui chante en duo avec Maitre Gims sur le titre 'Sapés comme jamais' en 2015 ?",
+            "propositions" : {
+                "text1" : "Black M",
+                "text2" : "Niska",
+                "text3" : "Slimane",
+                "text4" : "Dadju"
+            },
+            "answer" : "Niska"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Comment s'appelle la version de 'Christine' enregistrée en anglais par Christine & the Queens ?",
+            "answer" : "Tilted"
+        }
+    },
+    {
+        "id": "34",
+        "categorie" : "Cinéma",
+        "theme" : "Martin Scorsese",
+		"easy": {
+            "level": 1,
+            "title": "Avec quel film Scorsese remporte-t-il la Palme d'Or en 1976 ?",
+            "propositions" : {
+                "text1" : "Taxi Driver",
+                "text2" : "Raging Bull",
+                "text3" : "Casino",
+                "text4" : "Les Affranchis"
+            },
+            "answer" : "Taxi Driver"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel acteur joue le rôle de Judas dans 'La Dernière Tentation du Christ' de Scorsese ?",
+            "propositions" : {
+                "text1" : "Robert De Niro",
+                "text2" : "Harvey Keitel",
+                "text3" : "Nicolas Cage",
+                "text4" : "Willem Dafoe"
+            },
+            "answer" : "Harvey Keitel"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel documentaire sur le cinéma italien Scorsese réalise-t-il en 1999 ?",
+            "answer" : "Mon voyage en Italie"
         }
     }
 ]

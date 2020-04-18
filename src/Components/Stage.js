@@ -22,7 +22,7 @@ class Stage extends Component {
             showModal : false,
             showIntroModal : true,
             showWinModal : false,
-            questions : questionsList,
+            questions : JSON.parse(localStorage.getItem("remainingQuestions")) !== null ? JSON.parse(localStorage.getItem("remainingQuestions")) : questionsList,
             currentQuestion : {},
             windowHeight : window.innerHeight
         }
@@ -53,7 +53,9 @@ class Stage extends Component {
             //If no question left, reload questions list
             if(this.state.questions.length === 0) {
                 this.setState({questions : [...questionsList]})
+                localStorage.removeItem('remainingQuestions')
             }
+            
         }
         
     }
@@ -62,6 +64,7 @@ class Stage extends Component {
         const arr = this.state.questions.slice();
         arr.splice(index, 1)
         this.setState({ questions : arr });
+        localStorage.setItem('remainingQuestions', JSON.stringify(this.state.questions));
     };
 
     closeModal = () => {
@@ -216,6 +219,7 @@ class Stage extends Component {
     }
 
     render(){
+        console.log(JSON.parse(localStorage.getItem("remainingQuestions")))
         return(
             <div id="stage" style={{ backgroundPositionX: this.state.scrollLeft}}>
                 <ReactModal 
