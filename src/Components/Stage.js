@@ -219,7 +219,6 @@ class Stage extends Component {
     }
 
     render(){
-        console.log(JSON.parse(localStorage.getItem("remainingQuestions")))
         return(
             <div id="stage" style={{ backgroundPositionX: this.state.scrollLeft}}>
                 <ReactModal 
