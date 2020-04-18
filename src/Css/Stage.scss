@@ -45,10 +45,8 @@
   }
 .modal {
   position : absolute;
-  top: 50%;
-  -moz-transform:  translateY(-50%);
-  -webkit-transform:  translateY(-50%);
-  transform:  translateY(-50%);
+  top: 10%;
+  
   left: 5%;
   right: 5%;
   height: fit-content;
@@ -153,6 +151,7 @@
   .result {
     margin-top: 20px;
     font-size: 28px;
+    font-weight: bold;
   }
 }
 #start-game {
@@ -282,6 +281,10 @@
 }
 @media(max-height:740px) and (min-width : 768px){
   .modal {
+    -moz-transform:  translateY(-50%);
+    -webkit-transform:  translateY(-50%);
+    top:  50%;
+    transform:  translateY(-50%);
     h1 {
       font-size: 24px;
     }

@@ -103,7 +103,7 @@
         "theme" : "Marcel Proust",
 		"easy": {
             "level": 1,
-            "title": "Comment s'appelle le roman en sept volumes écrit par Proust entre 1906 et 1922",
+            "title": "Comment s'appelle le roman en sept volumes écrit par Proust entre 1906 et 1922 ?",
             "propositions" : {
                 "text1" : "La comédie humaine",
                 "text2" : "Du côté de chez Swann",
@@ -212,14 +212,14 @@
         },
         "medium": {
             "level": 2,
-            "title": "Quelle est la capitale de l'Inde ?",
+            "title": "Quelle ville n'est pas une capitale de l'Afrique du Sud ?",
             "propositions" : {
-                "text1" : "Mumbai",
-                "text2" : "Delhi",
-                "text3" : "New Delhi",
-                "text4" : "Calcutta"
+                "text1" : "Johannesbourg",
+                "text2" : "Le Cap",
+                "text3" : "Pretoria",
+                "text4" : "Bloemfontein"
             },
-            "answer" : "New Delhi"
+            "answer" : "Johannesbourg"
         },
         "hard": {
             "level": 3,
@@ -368,9 +368,9 @@
             "title": "En quelle année a été proclamée la Deuxième République en France ?",
             "propositions" : {
                 "text1" : "1792",
-                "text2" : "1848",
-                "text3" : "1918",
-                "text4" : "1945"
+                "text2" : "1805",
+                "text3" : "1848",
+                "text4" : "1870"
             },
             "answer" : "1848"
         },
@@ -390,6 +390,623 @@
             "title": "Quel homme politique a rédigé le decret d'abolition de l'esclavage signé le 27 avril 1848 ?",
             "format" : "(prénom + nom)",
             "answer" : "Victor Schoelcher"
+        }
+    },
+    {
+        "id": "13",
+        "categorie" : "Musique",
+        "theme" : "Georges Brassens",
+		"easy": {
+            "level": 1,
+            "title": "Quel était l'instrument de prédilection de Georges Brassens ?",
+            "propositions" : {
+                "text1" : "Le piano",
+                "text2" : "La guitare",
+                "text3" : "L'harmonica",
+                "text4" : "La trompette"
+            },
+            "answer" : "La guitare"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Pour Brassens, que lui offre l'étranger qui lui sourit dans Chanson pour l'Auvergnat ?",
+            "propositions" : {
+                "text1" : "Un peu d'amour",
+                "text2" : "Un peu de tendresse",
+                "text3" : "Un peu de miel",
+                "text4" : "Un peu de joie"
+            },
+            "answer" : "Un peu de miel"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel poète est l'auteur du poème Les Passantes, mis en musique par Brassens en 1972 ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Antoine Pol"
+        }
+    },
+    {
+        "id": "14",
+        "categorie" : "Cinéma",
+        "theme" : "Christopher Nolan",
+		"easy": {
+            "level": 1,
+            "title": "Quel super-héro est au centre d'une trilogie réalisée par Christopher Nolan ?",
+            "propositions" : {
+                "text1" : "Thor",
+                "text2" : "Superman",
+                "text3" : "Hulk",
+                "text4" : "Batman"
+            },
+            "answer" : "Batman"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Dans quel film de Christopher Nolan David Bowie interprète-t-il Nikola Tesla ?",
+            "propositions" : {
+                "text1" : "Insomnia",
+                "text2" : "Memento",
+                "text3" : "Following",
+                "text4" : "Le Prestige"
+            },
+            "answer" : "Le Prestige"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel objet utilise Eames 'Le Faussaire' comme totem dans Inception ?",
+            "answer" : "Un jeton de poker"
+        }
+    },
+    {
+        "id": "15",
+        "categorie" : "Sport",
+        "theme" : "Football américain",
+		"easy": {
+            "level": 1,
+            "title": "Comment s'appelle la finale du championnat de NFL ?",
+            "propositions" : {
+                "text1" : "SuperBowl",
+                "text2" : "Playoffs",
+                "text3" : "Final",
+                "text4" : "RoseBowl"
+            },
+            "answer" : "SuperBowl"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel ancien coach des Packers a donné son nom au trophée remporté par le vainqueur du SuperBowl ?",
+            "propositions" : {
+                "text1" : "Vince Lombardi",
+                "text2" : "George Halas",
+                "text3" : "Lamar Hunt",
+                "text4" : "Earl Lambeau"
+            },
+            "answer" : "Vince Lombardi"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Comment s'appelle le Stade des Chicago Bears ?",
+            "answer" : "Soldier Field"
+        }
+    },
+    {
+        "id": "16",
+        "categorie" : "Littérature",
+        "theme" : "Cyrano de Bergerac (pièce de Rostand)",
+		"easy": {
+            "level": 1,
+            "title": "Quelle partie de son corps Cyrano trouve-t-il disgracieuse ?",
+            "propositions" : {
+                "text1" : "Sa bouche",
+                "text2" : "Ses yeux",
+                "text3" : "Ses oreilles",
+                "text4" : "Son nez"
+            },
+            "answer" : "Son nez"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Comment s'appelle le pâtissier féru de poésie et ami de Cyrano ?",
+            "propositions" : {
+                "text1" : "Le Bret",
+                "text2" : "Ragueneau",
+                "text3" : "Guiche",
+                "text4" : "Montfleury"
+            },
+            "answer" : "Ragueneau"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel comédien, à qui Rostand a dédié la pièce, fut le premier interpète de Cyrano ?",
+            "format" : "(Nom de famille)",
+            "answer" : "Coquelin"
+        }
+    },
+    {
+        "id": "17",
+        "categorie" : "Divers",
+        "theme" : "Séries TV : Friends",
+		"easy": {
+            "level": 1,
+            "title": "Dans quelle ville habitent les six peersonnages de Friends ?",
+            "propositions" : {
+                "text1" : "New York",
+                "text2" : "Chicago",
+                "text3" : "Los Angeles",
+                "text4" : "Dallas"
+            },
+            "answer" : "New York"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Qu'est-il arrivé à Chandler lors d'un Thanksgiving passé chez les Geller dans sa jeunesse ?",
+            "propositions" : {
+                "text1" : "Ross l'a frappé",
+                "text2" : "Rachel a brûlé ses vêtements",
+                "text3" : "Monica lui a coupé un orteil",
+                "text4" : "Joey l'a embrassé"
+            },
+            "answer" : "Monica lui a coupé un orteil"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel est le prénom de la femme du demi-frère de Phoebe ?",
+            "answer" : "Alice"
+        }
+    },
+    {
+        "id": "18",
+        "categorie" : "Musique",
+        "theme" : "Tubes français des années 80",
+		"easy": {
+            "level": 1,
+            "title": "Quel tube d'Images est resté 13 semaines en tête des ventes en 1986 ?",
+            "propositions" : {
+                "text1" : "Maitresse",
+                "text2" : "Capitaine abandonné",
+                "text3" : "Les démons de minuit",
+                "text4" : "Nuit de folie"
+            },
+            "answer" : "Les démons de minuit"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Qui chante 'Africa' en 1982 ?",
+            "propositions" : {
+                "text1" : "Rose Laurens",
+                "text2" : "Caroline Loeb",
+                "text3" : "Julie Pietri",
+                "text4" : "Joniece Jamison"
+            },
+            "answer" : "Rose Laurens"
+        },
+        "hard": {
+            "level": 3,
+            "title": "En duo avec quelle chanteuse américaine François Feldman chante-t-il 'Joue Pas' en 1989 ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Joniece Jamison"
+        }
+    },
+    {
+        "id": "19",
+        "categorie" : "Cinéma",
+        "theme" : "Cinéma japonais",
+		"easy": {
+            "level": 1,
+            "title": "Quel cinéaste considéré comme un des plus influents de l'histoire a réalisé Les Sept Samuraïs et Rashōmon ?",
+            "propositions" : {
+                "text1" : "Shohei Imamura",
+                "text2" : "Akira Kurosawa",
+                "text3" : "Takeshi Kitano",
+                "text4" : "Nagisa Oshima"
+            },
+            "answer" : "Akira Kurosawa"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel cinéaste japonais a remporté deux Palmes d'Or avec La Ballade de Narayama et L'Anguille ?",
+            "propositions" : {
+                "text1" : "Shōhei Imamura",
+                "text2" : "Akira Kurosawa",
+                "text3" : "Hirokazu Kore-eda",
+                "text4" : "Nagisa Ōshima"
+            },
+            "answer" : "Shōhei Imamura"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel cinéaste japonais a réalisé les film Jugatsu, Violent Cop et Kids Return ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Takeshi Kitano"
+        }
+    },
+    {
+        "id": "19",
+        "categorie" : "Sport",
+        "theme" : "Rolland Garros",
+		"easy": {
+            "level": 1,
+            "title": "Sur quelle surface se joue le tournoi de Rolland Garros ?",
+            "propositions" : {
+                "text1" : "Gazon",
+                "text2" : "Terre battue",
+                "text3" : "Ciment",
+                "text4" : "Parquet"
+            },
+            "answer" : "Terre battue"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel joueur a perdu deux finales consécutives à Rolland Garros en 1990 et 1991 ?",
+            "propositions" : {
+                "text1" : "André Agassi",
+                "text2" : "Pete Sampras",
+                "text3" : "Stefan Hedberg",
+                "text4" : "Ivan Lendl"
+            },
+            "answer" : "André Agassi"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Qui détient le record de victoires dans le tournoi féminin de Rolland Garros avec 7 titres ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Chris Evert"
+        }
+    },
+    {
+        "id": "20",
+        "categorie" : "Divers",
+        "theme" : "Jeu vidéo : The legend of Zelda",
+		"easy": {
+            "level": 1,
+            "title": "Quelle société édite les jeux Legend of Zelda ?",
+            "propositions" : {
+                "text1" : "Sega",
+                "text2" : "Nintendo",
+                "text3" : "Sony",
+                "text4" : "Atari"
+            },
+            "answer" : "Nintendo"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel est le nom du prodige Piaf de Breath of the Wild ?",
+            "propositions" : {
+                "text1" : "Daruk",
+                "text2" : "Mipha",
+                "text3" : "Revali",
+                "text4" : "Urbosa"
+            },
+            "answer" : "Revali"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel magicien est l'alter-égo de Ganon dans A Link to the Past ?",
+            "answer" : "Agahnim"
+        }
+    },
+    {
+        "id": "21",
+        "categorie" : "Histoire",
+        "theme" : "La guerre de Cent ans",
+		"easy": {
+            "level": 1,
+            "title": "Quelle personnalité conduit les troupes françaises dans la levée du siège d'Orléans en 1429 ?",
+            "propositions" : {
+                "text1" : "Agnès Sorel",
+                "text2" : "Charles VII",
+                "text3" : "Aliénor d'Aquitaine",
+                "text4" : "Jeanne d'Arc"
+            },
+            "answer" : "Jeanne d'Arc"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel traité met définitivement fin à la guerre de 100 ans en 1475 ?",
+            "propositions" : {
+                "text1" : "Traité de Castillon",
+                "text2" : "Traité de Picquigny",
+                "text3" : "Traité de Troyes",
+                "text4" : "Traité de Brétigny"
+            },
+            "answer" : "Traité de Picquigny"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel roi d'Angleterre signe le traité de Picquigny en 1453 ?",
+            "answer" : "Édouard IV"
+        }
+    },
+    {
+        "id": "22",
+        "categorie" : "Musique",
+        "theme" : "Rap français",
+		"easy": {
+            "level": 1,
+            "title": "Quel artiste connait un des premiers succès du rap français avec 'Bouge de là' en 1991 ?",
+            "propositions" : {
+                "text1" : "MC Solaar",
+                "text2" : "Dee Nasty",
+                "text3" : "Joey Starr",
+                "text4" : "Sidney"
+            },
+            "answer" : "MC Solaar"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Avec Booba, qui formait le duo Lunatic ?",
+            "propositions" : {
+                "text1" : "Ali",
+                "text2" : "Oxmo Puccino",
+                "text3" : "Pit Baccardi",
+                "text4" : "Cassidy"
+            },
+            "answer" : "Ali"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quelle rappeuse originaire de Marseille distribue son EP 'État d'urgence' à prix libre en 2016 ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Keny Arkana"
+        }
+    },
+    {
+        "id": "23",
+        "categorie" : "Cinéma",
+        "theme" : "Films Marvel",
+		"easy": {
+            "level": 1,
+            "title": "Comment s'appelle l'équipe formée de plusieurs super-héros Marvel ?",
+            "propositions" : {
+                "text1" : "Justice League",
+                "text2" : "Avengers",
+                "text3" : "Suicide Squad",
+                "text4" : "Watchmen"
+            },
+            "answer" : "Avengers"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quelle Pierre d'infinité est insérée dans le front de Vision ?",
+            "propositions" : {
+                "text1" : "Pierre de l'esprit",
+                "text2" : "Pierre de l'espace",
+                "text3" : "Pierre du pouvoir",
+                "text4" : "Pierre du temps"
+            },
+            "answer" : "Pierre de l'esprit"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel jeune garçon aide Tony Stark a localiser le Mandarin dans Iron Man 3 ?",
+            "format" : "(prénom)",
+            "answer" : "Harley"
+        }
+    },
+    {
+        "id": "24",
+        "categorie" : "Sport",
+        "theme" : "Tournoi des 6 nations",
+		"easy": {
+            "level": 1,
+            "title": "Quel pays a intégré le tournoi en 2000, le faisant passer de 5 à 6 nations ?",
+            "propositions" : {
+                "text1" : "Ecosse",
+                "text2" : "Italie",
+                "text3" : "Pays de Galles",
+                "text4" : "Argentine"
+            },
+            "answer" : "Italie"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel joueur finit le visage en sang lors d'un match France/Pays de Galles du tournoi 1983 ?",
+            "propositions" : {
+                "text1" : "Serge Blanco",
+                "text2" : "Pierre Berbizier",
+                "text3" : "Jean-Pierre Rives",
+                "text4" : "Didier Camberabero"
+            },
+            "answer" : "Jean-Pierre Rives"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel joueur passe un drop victorieux à la dernière seconde lors du France/Irlande 2018 ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Jonathan Sexton"
+        }
+    },
+    {
+        "id": "25",
+        "categorie" : "Littérature",
+        "theme" : "Littérature italienne",
+		"easy": {
+            "level": 1,
+            "title": "Quel poète du moyen-âge est l'auteur de la 'Divine Comédie' ?",
+            "propositions" : {
+                "text1" : "Dante Alighieri",
+                "text2" : "Bernardo Accolti",
+                "text3" : "Bianco da Sienas",
+                "text4" : "Teofilo Folengo"
+            },
+            "answer" : "Dante Alighieri"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel officier attend l'ennemi au fort Bastiani dans 'Le Désert des Tartares' ?",
+            "propositions" : {
+                "text1" : "Tancrède Falconeri",
+                "text2" : "Andreuccio de Perugia",
+                "text3" : "Ricardo Molteni",
+                "text4" : "Giovanni Drogo"
+            },
+            "answer" : "Giovanni Drogo"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel est le titre du septième et dernier roman d'Umberto Eco, publié 2015 ?",
+            "answer" : "Numéro zéro"
+        }
+    },
+    {
+        "id": "26",
+        "categorie" : "Géographie",
+        "theme" : "Pays d'Amérique Latine",
+		"easy": {
+            "level": 1,
+            "title": "Quel pays d'Amérique latine est lusophone ?",
+            "propositions" : {
+                "text1" : "Le Brésil",
+                "text2" : "Le Pérou",
+                "text3" : "Le Chili",
+                "text4" : "L'Argentine"
+            },
+            "answer" : "Le Brésil"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Avec quel pays le Honduras n'a-t-il pas de frontière ?",
+            "propositions" : {
+                "text1" : "Le Panama",
+                "text2" : "Le Nicaragua",
+                "text3" : "Le Guatemala",
+                "text4" : "Le Salvador"
+            },
+            "answer" : "Le Panama"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Hormis le Salvador, quel pays d'Amérique Latine a comme monnaie officielle le dollars américain ?",
+            "answer" : "L'Equateur"
+        }
+    },
+    {
+        "id": "27",
+        "categorie" : "Musique",
+        "theme" : "Daft Punk",
+		"easy": {
+            "level": 1,
+            "title": "Pour quel titre de 2013 Daft Punk est-il accompagné de Pharrell Williams et Nile Rodgers ?",
+            "propositions" : {
+                "text1" : "Get Lucky",
+                "text2" : "Around the world",
+                "text3" : "One more Time",
+                "text4" : "Da Funk"
+            },
+            "answer" : "Get Lucky"
+        },
+        "medium": {
+            "level": 2,
+            "title": "L'interview de quel producteur et DJ a-t-elle servi de base à un titre de Random Access Memory ?",
+            "propositions" : {
+                "text1" : "Patrick Cowley",
+                "text2" : "Marc Cerrone",
+                "text3" : "Patrick Hernandez",
+                "text4" : "Giorgio Moroder"
+            },
+            "answer" : "Giorgio Moroder"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel dessinateur japonais a réalisé plusieurs clips de l'album Discovery ?",
+            "format" : "(prénom + nom)",
+            "answer" : "Leiji Matsumoto"
+        }
+    },
+    {
+        "id": "28",
+        "categorie" : "Cinéma",
+        "theme" : "Woody Allen",
+		"easy": {
+            "level": 1,
+            "title": "Quelle comédie de Woody Allen avec Diane Keaton remporte l'Oscar du meilleur film 1978 ?",
+            "propositions" : {
+                "text1" : "Hannah et ses soeurs",
+                "text2" : "Annie Hall",
+                "text3" : "Stardust Memories",
+                "text4" : "La Rose Pourpre du Caire"
+            },
+            "answer" : "Annie Hall"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel acteur devient littéralement flou dans 'Harry dans tous ses états' ?",
+            "propositions" : {
+                "text1" : "Billy Crystal",
+                "text2" : "Bill Murray",
+                "text3" : "Kenneth Branagh",
+                "text4" : "Robin Williams"
+            },
+            "answer" : "Robin Williams"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Dans quel film de Woody Allen l'histoire est narrée par un chœur antique dans une arène de théâtre grec ?",
+            "answer" : "Maudite Aphrodite"
+        }
+    },
+    {
+        "id": "29",
+        "categorie" : "Divers",
+        "theme" : "Série TV : Game of Thrones",
+		"easy": {
+            "level": 1,
+            "title": "Quel nom de famille, commun aux enfants bâtards dans le Nord, a été donné à Jon ?",
+            "propositions" : {
+                "text1" : "Water",
+                "text2" : "Stone",
+                "text3" : "Snow",
+                "text4" : "Flower"
+            },
+            "answer" : "Snow"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Lequel de ces personnages n'est pas un membre de la famille Stark ?",
+            "propositions" : {
+                "text1" : "Rickon",
+                "text2" : "Talisa",
+                "text3" : "Domeric",
+                "text4" : "Benjen"
+            },
+            "answer" : "Domeric"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Quel est le nom du dragon réanimé puis récupéré par le Roi de la nuit ?",
+            "answer" : "Viserion"
+        }
+    },
+    {
+        "id": "30",
+        "categorie" : "Littérature",
+        "theme" : "Les fables de La Fontaine",
+		"easy": {
+            "level": 1,
+            "title": "De quelle fable est issue la morale 'Tout flatteur vit aux dépens de celui qui l'écoute' ?",
+            "propositions" : {
+                "text1" : "Le lièvre et la tortue",
+                "text2" : "Le corbeau et le renard",
+                "text3" : "La cigale et la fourmi",
+                "text4" : "Le loup et l'agneau"
+            },
+            "answer" : "Le corbeau et le renard"
+        },
+        "medium": {
+            "level": 2,
+            "title": "Quel animal est jugé responsable du mal dans 'Les animaux malades de la peste' ?",
+            "propositions" : {
+                "text1" : "L'âne",
+                "text2" : "Le loup",
+                "text3" : "L'agneau",
+                "text4" : "Le Renard"
+            },
+            "answer" : "L'âne"
+        },
+        "hard": {
+            "level": 3,
+            "title": "Par qui la génisse, la chèvre et la brebis se font-elle voler leur pitance ?",
+            "answer" : "Le lion"
         }
     }
 ]
