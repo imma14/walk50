@@ -45,7 +45,10 @@
   }
 .modal {
   position : absolute;
-  top: 10%;
+  top: 50%;
+  -moz-transform:  translateY(-50%);
+  -webkit-transform:  translateY(-50%);
+  transform:  translateY(-50%);
   left: 5%;
   right: 5%;
   height: fit-content;
@@ -161,6 +164,7 @@
   box-shadow: 2px 2px 5px #afacac;
   background: #3f81c7;
   color: white;
+  margin-bottom: 20px;
   &:hover {
     background: #5192d6;
   }
@@ -225,7 +229,7 @@
     z-index: 0;
   }
 }
-@media(max-height:740px){
+@media(max-height:740px) {
   #scorebox {
     z-index: 0;
     width: 80px;
@@ -274,5 +278,41 @@
       margin-top: 10px;
       font-size: 16px;
     }
+  }
+}
+@media(max-height:740px) and (min-width : 768px){
+  .modal {
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    .questionTitle {
+      font-size: 24px;
+    }
+    #choices-container {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      .choice {
+        p{
+          font-size: 20px;
+        }
+        img {
+          width : 150px
+        }
+        .mobile-only {
+          display: none;
+        }
+        .no-mobile {
+          display: block;
+        }
+      }
+    }
+  }
+  .react-responsive-spritesheet {
+    bottom: 9%;
   }
 }
